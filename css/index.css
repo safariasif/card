@@ -1,5 +1,91 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 22.2em;
+  height: 29.2em;
+  background-color: #171717;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px 0px;
+  transform: translate(-50% , -50%);
+  clip-path: polygon(
+    40px 0%,
+    100% 0,
+    100% calc(100% - 40px),
+    calc(100% - 40px) 100%,
+    0 100%,
+    0% 40px
+  );
+ transition: 1s  ease-in-out;
+ display: flex;
+ flex-direction: column;
+}
+.card .img{
+    width: 5.8em;
+    height: 6.8em;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #ffff;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px rgb(222, 187, 187);
+}
+.card .photo{
+    width: 5.8em;
+}
+.card h3{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+}
+.card span{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    padding: 0px 15px;
+    margin-top: 10px;
+    display: block;
+}
+.card .info{
+    font-weight: 400;
+    margin: 1em;
+    font-size: 1em;
+    text-align: center;
+    color: #ffff;
+    display: block;
+    text-align: justify;
+}
+.card .share{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 1em 0em;
+}
+.card a{
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+}
+.card .share a:hover{
+    color: red;
+}
+.card .button{
+    padding: 0.8em 1.7em;
+    margin: auto;
+    border: none;
+    border-radius: 25px;
+    color: #171717;
+    background-color: #ffffff;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.card .button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
